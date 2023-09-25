@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+    <style>
+        body{
+            background: rgb(97, 152, 253); font-family: Arial, Helvetica, sans-serif; 
+            font-size: 14pt; color: beige;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aprendendo a dominar o DOM</h1>
+    <p>Manipulando o <strong>DOM</strong></p>
+    <p>utilizando a seleção por <strong>ID</strong></p>
+    
+    <div id="msgm">Clica em aqui</div>
+    <div name="msg">clicou agora é Loding</div>
+    <div class = "mensagem">Erro volte ao inicio clique novamente</div>
+    
+    
+    <script> 
+    //selecionar objeto por ID // 
+      var d = window.document.getElementById("msgm")
+      d.style.color = "Green" 
+      d.style.backgroundColor = "orange"
+    
+      //selecionar objeto por Name//
+      var c = window.document.getElementsByName("msg")[0]
+      c.innerText = 'é hoje' // realizado a alteração do texto por innertext
+      
+      //Selecionar objeto por Class
+      var e = window.document.getElementsByClassName("mensagem")[0]
+      e.style.color = "red"
+
+    
+
+    </script>
+</body>
+</html>

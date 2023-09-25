@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+    <style>
+        body{
+            background: rgb(97, 152, 253); font-family: Arial, Helvetica, sans-serif; 
+            font-size: 14pt; color: beige;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aprendendo a dominar o DOM</h1>
+    <p>Manipulando o <strong>DOM</strong></p>
+    <p>utilizando a seleção por <strong>queryselector</strong></p>
+    
+    <div id="msgm">Clica em aqui</div>
+    <div class = "msg">Erro volte ao inicio clique novamente</div>
+    
+    
+    <script> 
+    //selecionar objeto por ID utilizando o querySelector, obs para ID usamos # para chamar no Query//
+      var d = window.document.querySelector("div#msgm")
+      d.style.color = "green"
+     
+    //Selecionar objeto por Class utilizando o querySelector, Já na Class utilizamos . e não preciso delecionar o array//
+      var e = window.document.querySelector("div.msg")
+      e.innerText = "Por Favor, clique novamente"
+
+    
+
+    </script>
+</body>
+</html>

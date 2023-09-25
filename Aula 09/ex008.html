@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+    <style>
+        body{
+            background: rgb(97, 152, 253); font-family: Arial, Helvetica, sans-serif; 
+            font-size: 14pt; color: beige;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aprendendo a dominar o DOM</h1>
+    <p>Será que irei dominar o <strong>DOM</strong> no JavaScript</p>
+    <p>Minha Princesa <strong>Maria Alice</strong></bold></p>
+        
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write("Fica aqui minha pergunta ? " + p1.innerHTML)
+        
+        var p2 = window.document.getElementsByTagName('p')[1]
+        window.document.write("Eu te amo, " + p2.innerText)
+
+        p1.style.color = "black"
+      
+
+    </script>
+</body>
+</html>

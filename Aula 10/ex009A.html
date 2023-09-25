@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Eventos DOM</title>
+
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        div#click{
+            background: greenyellow;
+            color:rgb(37, 141, 231);
+            width: 110px;
+            height: 80px;
+            
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Utilizando Listeners para limpar seu HTML</h1>
+    <div id ="click">
+        Clique para ter uma resposta...
+    </div>
+
+    <script>
+        var a = document.getElementById("click")
+        a.addEventListener("click",clicar)       //Utilizando o addeventListerner
+        a.addEventListener("mouseenter", entrar) //limpamos e retiramos as chamadas de eventos que estavam
+        a.addEventListener("mouseout",sair) // deixando a div limpa, e o código mais organizado
+        
+    function clicar(){
+        a.innerText= "Clicou né baitola"
+    }
+    function entrar(){
+        a.innerText= "Entrou"
+        a.style.background="red"
+    }
+    function sair(){
+        a.innerText= "Saiu"
+        a.style.background="greenyellow"
+    }
+    </script>
+    
+</body>
+</html>

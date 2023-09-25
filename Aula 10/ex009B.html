@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Eventos DOM</title>
+
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        div#click{
+            background: greenyellow;
+            color:rgb(37, 141, 231);
+            width: 110px;
+            height: 80px;
+            
+
+        }
+
+    </style>
+</head>
+<body>
+                     
+    <div id ="click" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()"> 
+        Clique para ter uma resposta...
+    </div>
+
+    <script>
+        var a = document.getElementById("click") // criando a variavél fora da função devido a uma possivél
+                                                 //economia de memória que verems mais a frente//
+
+        function clicar(){ //criando a função para evento//
+        a.innerText= "Clicou né baitola"
+        
+    }
+    function entrar(){
+        a.innerText= "Entrou"
+        a.style.background="red" // dando estilo a uma função//
+    }
+    function sair(){
+        a.innerText= "Saiu"
+        a.style.background="greenyellow"
+    }
+    </script>
+    
+</body>
+</html>
